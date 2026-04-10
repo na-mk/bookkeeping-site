@@ -4,8 +4,8 @@ import { getFaqs } from "@/lib/queries";
 import { sampleFaqs } from "@/lib/sampleData";
 
 export const metadata = {
-  title: "FAQ | Kaya Bookkeeping",
-  description: "Common questions about Kaya Bookkeeping services, workflow, and onboarding.",
+  title: "FAQ | Bookkeeping Site",
+  description: "Common questions about bookkeeping services, workflow, and onboarding.",
 };
 
 export default async function FAQPage() {
@@ -17,7 +17,7 @@ export default async function FAQPage() {
       <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
         <SectionHeading
           title="Frequently asked questions"
-          description="Everything a new client needs to understand about services, timing, and the way Kaya Bookkeeping works."
+          description="Everything a new client needs to understand about services, timing, and the way the bookkeeping service works."
         />
         <div className="mt-12 grid gap-6 lg:grid-cols-2">
           {displayedFaqs.map((faq) => (

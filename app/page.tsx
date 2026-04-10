@@ -8,7 +8,7 @@ import { getHomePageData } from "@/lib/queries";
 import { sampleFaqs, samplePosts, sampleServices, sampleTestimonials } from "@/lib/sampleData";
 
 export const metadata = {
-  title: "Kaya Bookkeeping | Home",
+  title: "Bookkeeping Site | Home",
   description: "Bookkeeping support for small businesses, from cleanup and payroll to better money habits.",
 };
 
@@ -34,7 +34,7 @@ export default async function Home() {
       <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
         <SectionHeading
           title="Our services include the essentials business owners keep putting off"
-          description="The home page now leads with the same practical service categories shown in your visuals instead of generic accounting copy."
+          description="The home page now leads with practical service categories instead of generic accounting copy."
         />
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {featuredServices.map((service) => (
@@ -75,8 +75,8 @@ export default async function Home() {
 
       <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
         <SectionHeading
-          title="Why clients stay with Kaya Bookkeeping"
-          description="The tone is now closer to the social media materials you shared: approachable, practical, and focused on clear value."
+          title="Why clients stay with Bookkeeping Site"
+          description="The tone is approachable, practical, and focused on clear value."
         />
         <div className="mt-12 grid gap-6 md:grid-cols-2">
           {highlightedTestimonials.map((testimonial, index) => (

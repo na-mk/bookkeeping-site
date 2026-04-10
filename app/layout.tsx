@@ -4,9 +4,9 @@ import SiteFooter from "@/components/SiteFooter";
 import SiteHeader from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
-  title: "Kaya Bookkeeping | Smart habits that save money",
+  title: "Bookkeeping Site | Smart habits that save money",
   description:
-    "Kaya Bookkeeping LLC helps small businesses stay organized, save regularly, and build better money habits.",
+    "Bookkeeping Site helps small businesses stay organized, save regularly, and build better money habits.",
 };
 
 export default function RootLayout({

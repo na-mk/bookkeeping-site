@@ -3,8 +3,8 @@ import ContactForm from "@/components/ContactForm";
 import CalendarEmbed from "@/components/CalendarEmbed";
 
 export const metadata = {
-  title: "Contact | Kaya Bookkeeping",
-  description: "Contact Kaya Bookkeeping for cleanup, catch up work, payroll help, or ongoing bookkeeping support.",
+  title: "Contact | Bookkeeping Site",
+  description: "Contact Bookkeeping Site for cleanup, catch up work, payroll help, or ongoing bookkeeping support.",
 };
 
 export default function ContactPage() {

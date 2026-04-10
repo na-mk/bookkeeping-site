@@ -7,11 +7,11 @@ export default function SiteFooter() {
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           <div>
             <p className="text-lg font-semibold text-white">
-              <span className="text-emerald-400">Kaya</span> Bookkeeping
+              <span className="text-emerald-400">Bookkeeping</span> Site
             </p>
             <p className="mt-3 max-w-sm text-sm leading-6 text-emerald-100/70">
-              Kaya Bookkeeping LLC brings you value with practical bookkeeping support, cleaner
-              records, and smarter money habits.
+              Bookkeeping Site brings practical support, cleaner records, and smarter money habits
+              to small businesses.
             </p>
           </div>
           <div>
@@ -49,12 +49,12 @@ export default function SiteFooter() {
               Reach out for cleanup, catch up, payroll, receivables, payables, and ongoing
               bookkeeping support.
             </p>
-            <p className="mt-3 text-sm text-white">info@kayabookkeeping.com</p>
-            <p className="mt-2 text-sm text-emerald-100/70">www.kayabookkeeping.com</p>
+            <p className="mt-3 text-sm text-white">contact@example.com</p>
+            <p className="mt-2 text-sm text-emerald-100/70">Professional bookkeeping support</p>
           </div>
         </div>
         <p className="mt-10 text-center text-xs uppercase tracking-[0.28em] text-emerald-100/40">
-          © 2026 Kaya Bookkeeping LLC. All rights reserved.
+          © 2026 Bookkeeping Site. All rights reserved.
         </p>
       </div>
     </footer>

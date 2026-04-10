@@ -16,7 +16,7 @@ export default function Hero() {
       <div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 lg:grid-cols-[1.1fr_0.9fr] lg:px-8 lg:py-24">
         <div className="max-w-3xl">
           <p className="inline-flex rounded-full border border-emerald-200 bg-white/80 px-4 py-2 text-sm font-semibold uppercase tracking-[0.24em] text-emerald-700">
-            Kaya Bookkeeping LLC
+            Bookkeeping Site
           </p>
           <h1 className="mt-6 text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
             Bringing you value with smart bookkeeping support.
@@ -32,14 +32,12 @@ export default function Hero() {
             >
               Book your service
             </Link>
-            <a
-              href="https://www.kayabookkeeping.com"
-              target="_blank"
-              rel="noreferrer"
+            <Link
+              href="/contact"
               className="inline-flex items-center justify-center rounded-full border border-emerald-300 bg-white/80 px-8 py-3 text-sm font-semibold text-emerald-900 transition hover:bg-white"
             >
-              Visit website
-            </a>
+              Learn more
+            </Link>
           </div>
           <div className="mt-10 flex flex-wrap gap-3 text-sm font-medium text-slate-700">
             <span className="rounded-full bg-white/90 px-4 py-2 shadow-sm">Cleanup</span>
@@ -54,9 +52,9 @@ export default function Hero() {
             <div className="flex items-start justify-between gap-4">
               <div>
                 <p className="text-5xl font-black uppercase leading-none tracking-tight text-emerald-600">
-                  Kaya
+                  Bookkeeping
                 </p>
-                <p className="text-3xl font-semibold leading-none text-slate-950">Bookkeeping</p>
+                <p className="text-3xl font-semibold leading-none text-slate-950">Site</p>
               </div>
               <div className="rounded-2xl bg-emerald-50 px-4 py-3 text-right">
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-700">
@@ -82,7 +80,7 @@ export default function Hero() {
             </div>
             <div className="mt-6 rounded-[1.5rem] bg-emerald-600 px-5 py-4 text-white">
               <p className="text-xs uppercase tracking-[0.2em] text-emerald-100">More info</p>
-              <p className="mt-2 text-lg font-semibold">Visit www.kayabookkeeping.com</p>
+              <p className="mt-2 text-lg font-semibold">Contact us to get started</p>
             </div>
           </div>
         </div>

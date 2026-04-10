@@ -4,7 +4,7 @@ import { getServices } from "@/lib/queries";
 import { sampleServices } from "@/lib/sampleData";
 
 export const metadata = {
-  title: "Services | Kaya Bookkeeping",
+  title: "Services | Bookkeeping Site",
   description: "Explore cleanup, payroll, receivables, payables, inventory tracking, and sales tax support.",
 };
 
@@ -17,7 +17,7 @@ export default async function ServicesPage() {
       <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
         <SectionHeading
           title="Bookkeeping services built around real admin work"
-          description="This page now reflects the services shown in your visuals so visitors immediately understand what Kaya Bookkeeping actually handles."
+          description="This page clearly explains the service categories handled by the bookkeeping business."
         />
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {displayedServices.map((service) => (

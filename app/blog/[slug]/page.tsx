@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   }
 
   return {
-    title: `${post.title} | Kaya Bookkeeping`,
+    title: `${post.title} | Bookkeeping Site`,
     description: post.excerpt,
   };
 }
@@ -36,7 +36,7 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
             {post.title}
           </h1>
           <div className="mt-6 flex flex-col gap-2 text-sm text-slate-500 sm:flex-row sm:items-center sm:gap-4">
-            <span>By {post.author?.name ?? "Kaya Bookkeeping"}</span>
+            <span>By {post.author?.name ?? "Bookkeeping Site"}</span>
             <span>
               {new Date(post.publishedAt).toLocaleDateString("en-US", {
                 year: "numeric",

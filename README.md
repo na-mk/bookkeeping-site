@@ -1,48 +1,75 @@
-# LedgerLift
+# Bookkeeping Site
 
-Site marketing développé avec Next.js 16 App Router, Tailwind CSS et Sanity CMS.
+Modern bookkeeping website built with Next.js 16, React 19, Tailwind CSS, and Sanity.
 
-## Objectif
+## Overview
 
-Ce site est conçu pour présenter une offre de comptabilité professionnelle pour petites entreprises et indépendants, avec toutes les pages essentielles : accueil, services, à propos, FAQ, contact, blog et article détaillé.
+This project is a marketing website for a bookkeeping business. It includes the core pages needed for a service-based site:
 
-## Démarrage
+- Home
+- Services
+- About
+- FAQ
+- Contact
+- Blog
+- Individual blog post pages
 
-Installez les dépendances puis lancez le serveur de développement :
+The project also includes a Sanity setup for managing services, testimonials, FAQs, and blog content.
+
+## Tech Stack
+
+- Next.js 16 App Router
+- React 19
+- Tailwind CSS 4
+- Sanity CMS
+- TypeScript
+
+## Getting Started
+
+Install dependencies:
 
 ```bash
 npm install
+```
+
+Start the development server:
+
+```bash
 npm run dev
 ```
 
-Ouvrez [http://localhost:3000](http://localhost:3000).
+Open [http://localhost:3000](http://localhost:3000).
 
-## Structure principale
+## Available Scripts
 
-- `app/` : pages de l’application avec App Router
-- `components/` : composants UI réutilisables
-- `lib/` : intégration Sanity, requêtes et données de secours
-- `sanity/` : configuration et schémas CMS
-- `app/api/contact/route.ts` : API route pour le formulaire de contact
+- `npm run dev` starts the local development server
+- `npm run build` creates a production build
+- `npm run start` runs the production server
+- `npm run lint` runs ESLint
 
-## Sanity CMS
+## Project Structure
 
-La configuration Sanity est fournie dans `sanity/sanity.config.ts`. Vous pouvez déployer un studio Sanity local et ajouter du contenu pour les services, articles, FAQ et témoignages.
+- `app/` application routes and pages
+- `components/` reusable UI components
+- `lib/` queries, sample data, Sanity client, and shared types
+- `sanity/` Sanity config and content schemas
+- `app/api/contact/route.ts` contact form API endpoint
 
-## Environnement
+## Environment Variables
 
-Copiez le modèle d’environnement :
+Copy the example file:
 
 ```bash
 cp .env.local.example .env.local
 ```
 
-Puis remplacez les valeurs avec votre `NEXT_PUBLIC_SANITY_PROJECT_ID` et `NEXT_PUBLIC_SANITY_DATASET`.
+Then set the following values:
 
-## Optimisation
+- `NEXT_PUBLIC_SANITY_PROJECT_ID`
+- `NEXT_PUBLIC_SANITY_DATASET`
 
-- Pages générées côté serveur avec App Router
-- Requêtes CMS gérées via `next-sanity`
-- Composants réutilisables pour une architecture scalable
-- SEO metadata pour chaque page
-- Contact form via route API
+## Notes
+
+- The contact form posts to the local API route at `app/api/contact/route.ts`
+- Sample content is available in `lib/sampleData.ts` when CMS data is not configured
+- The Sanity Studio configuration is stored in `sanity/sanity.config.ts`

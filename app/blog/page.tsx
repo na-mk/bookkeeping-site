@@ -4,7 +4,7 @@ import { getBlogPosts } from "@/lib/queries";
 import { samplePosts } from "@/lib/sampleData";
 
 export const metadata = {
-  title: "Blog | Kaya Bookkeeping",
+  title: "Blog | Bookkeeping Site",
   description: "Articles and resources focused on spending visibility, cleanup work, and better bookkeeping habits.",
 };
 

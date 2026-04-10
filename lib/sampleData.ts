@@ -33,7 +33,7 @@ export const sampleTestimonials: Testimonial[] = [
     company: "Greenline Retail",
     role: "Owner",
     quote:
-      "Kaya Bookkeeping helped us get current, understand our numbers, and finally build a routine that saves money.",
+      "Bookkeeping Site helped us get current, understand our numbers, and finally build a routine that saves money.",
   },
   {
     name: "Marcus Hill",
@@ -64,7 +64,7 @@ export const samplePosts: BlogPost[] = [
     excerpt:
       "A simple bookkeeping rhythm can help you save regularly, track spending, and maximize write-offs.",
     publishedAt: "2026-03-12",
-    author: { name: "Kaya Bookkeeping" },
+    author: { name: "Bookkeeping Site" },
   },
   {
     title: "When cleanup and catch up work pays off",
@@ -72,6 +72,6 @@ export const samplePosts: BlogPost[] = [
     excerpt:
       "Bringing delayed books up to date helps business owners make better decisions and avoid last-minute stress.",
     publishedAt: "2026-02-25",
-    author: { name: "Kaya Bookkeeping" },
+    author: { name: "Bookkeeping Site" },
   },
 ];
