@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LedgerLift
 
-## Getting Started
+Site marketing développé avec Next.js 16 App Router, Tailwind CSS et Sanity CMS.
 
-First, run the development server:
+## Objectif
+
+Ce site est conçu pour présenter une offre de comptabilité professionnelle pour petites entreprises et indépendants, avec toutes les pages essentielles : accueil, services, à propos, FAQ, contact, blog et article détaillé.
+
+## Démarrage
+
+Installez les dépendances puis lancez le serveur de développement :
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ouvrez [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Structure principale
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `app/` : pages de l’application avec App Router
+- `components/` : composants UI réutilisables
+- `lib/` : intégration Sanity, requêtes et données de secours
+- `sanity/` : configuration et schémas CMS
+- `app/api/contact/route.ts` : API route pour le formulaire de contact
 
-## Learn More
+## Sanity CMS
 
-To learn more about Next.js, take a look at the following resources:
+La configuration Sanity est fournie dans `sanity/sanity.config.ts`. Vous pouvez déployer un studio Sanity local et ajouter du contenu pour les services, articles, FAQ et témoignages.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Environnement
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Copiez le modèle d’environnement :
 
-## Deploy on Vercel
+```bash
+cp .env.local.example .env.local
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Puis remplacez les valeurs avec votre `NEXT_PUBLIC_SANITY_PROJECT_ID` et `NEXT_PUBLIC_SANITY_DATASET`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Optimisation
+
+- Pages générées côté serveur avec App Router
+- Requêtes CMS gérées via `next-sanity`
+- Composants réutilisables pour une architecture scalable
+- SEO metadata pour chaque page
+- Contact form via route API
