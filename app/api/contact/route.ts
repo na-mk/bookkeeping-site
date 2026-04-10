@@ -5,11 +5,11 @@ export async function POST(request: Request) {
   const { name, email, message } = body;
 
   if (!name || !email || !message) {
-    return NextResponse.json({ error: "Tous les champs sont requis." }, { status: 400 });
+    return NextResponse.json({ error: "All fields are required." }, { status: 400 });
   }
 
-  // TODO: Connecter à un service de messagerie ou Formspree pour envoyer le message.
-  console.log("Contact form reçu", { name, email, message });
+  // TODO: Connect this route to an email service, CRM, or form backend.
+  console.log("Contact form received", { name, email, message });
 
   return NextResponse.json({ success: true });
 }
